@@ -1,4 +1,4 @@
-Hi there, I'm ALKEE, a technical director of [SKIA](https://www.skia.kr).
+Hi there, I'm ALKEE.
 
 and I'm ...
 
