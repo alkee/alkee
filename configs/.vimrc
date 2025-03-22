@@ -166,4 +166,5 @@ nnoremap <C-L> :nohl<CR><C-L>
 
 " by ALKEE
 set incsearch " increment searach
+set number relativenumber
 

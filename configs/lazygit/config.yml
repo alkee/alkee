@@ -1,0 +1,9 @@
+git:
+  merging:
+    args: "--no-ff"
+  branchLogCmd: "git log --graph --color=always --abbrev-commit --decorate --date=relative --pretty=medium --oneline {{branchName}} --"
+
+
+gui:
+  timeformat: 2006-01-02
+
