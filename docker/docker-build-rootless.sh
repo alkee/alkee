@@ -14,8 +14,12 @@ fi
 username=`id -un`
 set -e # exit on error
 
+SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+
 docker build -t ${docker_image_name}:${username}\
 	--build-arg USER_UID=$(id -u)  \
 	--build-arg IMAGENAME=${docker_image_name} \
 	--build-arg USERNAME=${username} \
-	-f rootless.Dockerfile .
+	-f ${SCRIPT_DIR}/rootless.Dockerfile .
+
+
